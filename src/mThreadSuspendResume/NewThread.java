@@ -34,11 +34,11 @@ public class NewThread implements Runnable {
         System.out.println(name + " завершен.");
     }
 
-    synchronized void mySuspend() {
+     synchronized void mySuspend() {
         suspendFlag = true;
     }
 
-    synchronized void myResume() {
+     synchronized void myResume() {
         suspendFlag = false;
         notify();
     }
